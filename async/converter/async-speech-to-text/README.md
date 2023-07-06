@@ -12,7 +12,7 @@ That performs speech recognition on audio from the microphone and performs actio
 - [Installation](#installation)
 - [Usage](#usage)
 - [Dependencies](#dependencies)
-- [Structure(#structure)
+- [Structure](#structure)
 - [Contributing](#contributing)
 - [License](#license)
 

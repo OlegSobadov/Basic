@@ -5,7 +5,7 @@ import tkinter as tk
 import logging
 
 # Configure logging
-logging.basicConfig(level=logging.INFO, filename="data/app.log", filemode="w", format="%(asctime)s - %(levelname)s - %(message)s")
+logging.basicConfig(level=logging.INFO, filename="data/main.log", filemode="w", format="%(asctime)s - %(levelname)s - %(message)s")
 
 
 
