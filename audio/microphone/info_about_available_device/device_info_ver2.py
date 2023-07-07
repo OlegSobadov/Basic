@@ -1,12 +1,14 @@
 import pyaudio
 import logging
 
-logging.basicConfig(level=logging.ERROR)  # Set logging level to ERROR
 
+logging.basicConfig(level=logging.ERROR)
 
-class DeviceManager:
+class DeviceInformer:
+
     def __init__(self):
         self.p = pyaudio.PyAudio()
+
 
     def get_audio_devices_info(self):
         """
@@ -24,6 +26,7 @@ class DeviceManager:
         except Exception as exc:
             logging.error(f"An error occurred during device retrieval: {exc}")
             return []
+        
 
     def is_input_available(self, device_info):
         """
@@ -36,6 +39,7 @@ class DeviceManager:
             bool: True if the audio device has available input channels, False otherwise.
         """
         return device_info['maxInputChannels'] > 0
+    
 
     def get_available_input_devices(self):
         """
@@ -52,8 +56,8 @@ class DeviceManager:
     
 
 def display_available_devices():
-    device_manager = DeviceManager()
-    available_devices = device_manager.get_available_input_devices()
+    device_information = DeviceInformer()
+    available_devices = device_information.get_available_input_devices()
 
     if available_devices:
         print("Available Audio Devices:")
