@@ -5,6 +5,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Testing](#testing)
+- [Structure](#structure)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -58,6 +59,17 @@ The project includes comprehensive test cases to ensure the correctness of its f
 
 ```shell
 python -m unittest discover tests
+```
+
+## Structure
+```shell
+audio-device-information/
+  ├── main.py
+  ├── device_info.py
+  ├── user_interface.py
+  ├── tests/
+  │   └── test_device_info.py
+  └── README.md
 ```
 
 
