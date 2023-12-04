@@ -1,0 +1,8 @@
+Hello, [ClientName].
+
+
+How are you!
+
+this is order of [Number] to our deal.
+
+Reragd your [EmpName].
